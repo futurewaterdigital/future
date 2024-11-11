@@ -3,6 +3,9 @@ import React, { useState, useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import Image from "next/image";
 import { useForm, ValidationError } from "@formspree/react";
+import { PiMapPinAreaLight } from "react-icons/pi";
+import { PiEnvelopeSimpleThin } from "react-icons/pi";
+import { BsTelephone } from "react-icons/bs";
 
 export default function Page() {
   const [formData, setFormData] = useState({
@@ -116,14 +119,14 @@ export default function Page() {
             Why Choose Future Water Digital?
           </h2>
           <p className="py-2 text-white">
-            At Future Water Digital, we don't just create campaigns, we
+            At Future Water Digital, we don&apos;t just create campaigns, we
             cultivate lasting partnerships. We take the time to understand your
             unique business goals and challenges, then develop a data-driven,
             results-oriented strategy tailored to your specific needs.
           </p>
           <p className="py-2 text-white">
             Partner with Future Water Digital and experience the difference of a
-            truly integrated marketing solution. Let’s create the future
+            truly integrated marketing solution. Let&apos;s create the future
             together..
           </p>
           <p className="py-2 text-white">
@@ -133,12 +136,17 @@ export default function Page() {
           <div className="pt-8">
             <h3 className="text-xl text-white">Indian</h3>
             <hr />
-            <p className="py-2 pt-8 text-white">
-              #549, 2nd Floor, 14th Main, Sector 7, HSR Layout, Bangalore -
-              560102
+            <p className="flex items-center gap-4 py-2 pt-8 text-white">
+              <PiMapPinAreaLight color="cyan" /> #549, 2nd Floor, 14th Main,
+              Sector 7, HSR Layout, Bangalore - 560102
             </p>
-            <p className="py-2 text-white">quench@futurewaterdigital.com</p>
-            <p className="py-2 text-white">+91 97409 88233</p>
+            <p className="flex items-center gap-4 py-2 text-white">
+              <PiEnvelopeSimpleThin color="cyan" />{" "}
+              quench@futurewaterdigital.com
+            </p>
+            <p className="flex items-center gap-4 py-2 text-white">
+              <BsTelephone color="cyan" /> +91 97409 88233
+            </p>
           </div>
         </div>
 
