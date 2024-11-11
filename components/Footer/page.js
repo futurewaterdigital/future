@@ -3,15 +3,21 @@ import React from "react";
 import { FooterMenu } from "@/utils/data";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
-export default function page() {
+export default function Page() {
   const router = usePathname();
 
   return (
     <div className="bg-[#F5F3F3]">
       <div className="mx-auto grid w-11/12 grid-cols-3 py-8">
         <div>
-          <img src="/images/logo.svg" className="h-20" />
+          <Image
+            src="/images/logo.svg"
+            className="h-20"
+            width={200}
+            height={200}
+          />
         </div>
         <div className="flex flex-col justify-center text-center">
           <h2 className="pb-4 text-start text-xl text-[#0B608F]">

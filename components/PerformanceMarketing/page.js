@@ -1,5 +1,6 @@
 import React from "react";
 import { PerformanceMarketing } from "@/utils/data";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -16,7 +17,7 @@ export default function page() {
           </p>
         </div>
         <div>
-          <img src="/images/digital-marketing.png" />
+          <Image src="/images/digital-marketing.png" width={500} height={500} />
         </div>
       </div>
       <div className="mx-auto grid w-10/12 grid-cols-2 gap-8 py-12">

@@ -1,5 +1,6 @@
 import React from "react";
 import { VideoGraphy } from "@/utils/data";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -15,11 +16,8 @@ export default function page() {
 
         <div>
           {VideoGraphy.map((items, index) => (
-            <div className="space-y-2 py-4">
-              <div
-                className="h-[4.5em] w-full rounded-2xl bg-[#00FFF3] pr-2"
-                key={index}
-              >
+            <div className="space-y-2 py-4" key={index}>
+              <div className="h-[4.5em] w-full rounded-2xl bg-[#00FFF3] pr-2">
                 <div className="z-50 flex h-[4em] gap-4 rounded-2xl bg-white p-4">
                   <div className="">
                     <h2 className="text-2xl uppercase text-black">
@@ -36,7 +34,7 @@ export default function page() {
       </div>
 
       <div className="flex items-center">
-        <img src="/images/videography.png" />
+        <Image src="/images/videography.png" width={500} height={500} />
       </div>
     </div>
   );
