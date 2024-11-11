@@ -1,12 +1,38 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { FooterMenu } from "@/utils/data";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { useForm, ValidationError } from "@formspree/react";
 
 export default function Page() {
   const router = usePathname();
+  const [email, setEmail] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [state, handleSubmit] = useForm("mrbgkqbo");
+
+  // Email validation regex
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    if (validateEmail(email)) {
+      // console.log(email);
+      handleSubmit(e);
+      setEmailError(""); // Clear error message
+    } else {
+      // If email is invalid, set error message
+      setEmailError("Please enter a valid email address.");
+    }
+  };
 
   return (
     <div className="bg-[#F5F3F3]">
@@ -23,12 +49,13 @@ export default function Page() {
           <h2 className="pb-4 text-start text-xl text-[#0B608F]">
             Our Services
           </h2>
-
           <ul className="text-start">
             {FooterMenu.map((items, index) => (
               <li
                 key={index}
-                className={`hover:text-cyan  py-2 ${router === items.menuUrl ? "text-cyan" : "text-black"}`}
+                className={`py-2 hover:text-[#00C4C4] ${
+                  router === items.menuUrl ? "text-[#00C4C4]" : "text-black"
+                }`}
               >
                 <Link href={items.menuUrl}>{items.menu}</Link>
               </li>
@@ -37,11 +64,11 @@ export default function Page() {
         </div>
         <div className="flex flex-col">
           <h2 className="pb-4 text-xl text-[#0B608F]">Contact Us</h2>
-          <form class=" max-w-sm text-start">
-            <div class="relative">
-              <div class="pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3.5">
+          <form className="max-w-sm text-start" onSubmit={handleFormSubmit}>
+            <div className="relative">
+              <div className="pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3.5">
                 <svg
-                  class="h-4 w-4 text-gray-500 dark:text-gray-400"
+                  className="h-4 w-4 text-gray-500 dark:text-gray-400"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -53,17 +80,43 @@ export default function Page() {
               </div>
               <input
                 type="text"
+                // id="email"
+                name="email"
                 id="email-address-icon"
-                class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 ps-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500  dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
-                placeholder="name@flowbite.com"
+                className="block h-12 w-full rounded-lg border border-gray-300 bg-gray-200 p-2.5 ps-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)} // Update email state on change
               />
+              <button
+                type="submit"
+                className="absolute right-1 top-2 rounded-lg bg-[#00C4C4] p-1.5 text-sm"
+              >
+                Submit
+              </button>
             </div>
           </form>
+
+          {emailError && (
+            <p className="mt-2 text-sm text-red-500">{emailError}</p>
+          )}
+
+          {state.succeeded && (
+            <p className="mt-2 text-sm text-green-500">
+              Thank you! Your email has been submitted.
+            </p>
+          )}
         </div>
       </div>
+
       <div className="mx-auto mt-4 flex w-11/12 items-center justify-between border-t border-gray-300 py-4">
         <div>© Copyright Futurewater 2024</div>
-        <div></div>
+        <div className="flex gap-2">
+          <FaFacebookSquare size={22} />
+          <FaXTwitter size={22} />
+          <FaInstagram size={22} />
+          <FaLinkedin size={22} />
+        </div>
       </div>
     </div>
   );
