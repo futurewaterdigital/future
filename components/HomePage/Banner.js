@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function Banner() {
   return (
@@ -6,7 +7,7 @@ export default function Banner() {
       <section class="h-[80vh] bg-[url('/images/banner.png')] bg-cover bg-center bg-no-repeat">
         <div class="py-54 absolute top-48 w-9/12 px-40">
           <p className="text-2xl text-white">Ready to make a splash in the</p>
-          <h1 class="text-cyan mb-4 text-7xl font-bold uppercase leading-none tracking-tight">
+          <h1 class="mb-4 text-7xl font-bold uppercase leading-none tracking-tight text-cyan">
             Digital World?
           </h1>
           <p class="mb-8 text-lg font-normal text-white">
@@ -28,8 +29,8 @@ export default function Banner() {
             growth. 
           </p>
           <div class="flex flex-col space-y-4 sm:flex-row sm:justify-start sm:space-y-0">
-            <a
-              href="#"
+            <Link
+              href="/contact-us"
               class="inline-flex items-center justify-center bg-white px-5 py-3 text-center text-base font-medium text-[#171560] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
             >
               Get in Touch
@@ -48,7 +49,7 @@ export default function Banner() {
                   d="M1 5h12m0 0L9 1m4 4L9 9"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

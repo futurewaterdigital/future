@@ -8,14 +8,13 @@ export default function Service() {
     <div className="h-screen bg-[#020D17]">
       <section class="h-[80vh] bg-[url('/images/service.png')] bg-cover bg-center bg-no-repeat">
         <div class="py-54 top-40 mx-auto w-10/12 px-40 text-center">
-          <h1 class="text-cyan mb-4 text-5xl font-bold leading-none tracking-tight">
+          <h1 class="mb-4 text-5xl font-bold leading-none tracking-tight text-cyan">
             Our Services
           </h1>
           <p class="mb-8 mt-12 text-lg font-normal text-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-            mollis aliquam ut porttitor. Massa vitae tortor condimentum lacinia.
-            Vulputate dignissim suspendisse in est ante in nibh.
+            From strategic Digital Marketing to captivating Graphic Design and
+            engaging Videography, our services are designed to propel your
+            business to new heights.
           </p>
         </div>
         <div className="flex justify-end">
@@ -30,7 +29,7 @@ export default function Service() {
                     </p>
                     <Link
                       href={items.url}
-                      className="text-md hover:bg-cyan group flex w-[200px] items-center gap-4 bg-[#0C1348] p-4 text-white hover:text-black"
+                      className="text-md group flex w-[200px] items-center gap-4 bg-[#0C1348] p-4 text-white hover:bg-cyan hover:text-black"
                     >
                       <FaArrowRightLong className="fill-white group-hover:fill-black" />{" "}
                       Know More

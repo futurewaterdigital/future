@@ -41,12 +41,13 @@ export default function Page() {
             />
           </Link>
           <div className="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
-            <button
+            <Link
+              href="/contact-us"
               type="button"
-              className="bg-cyan flex items-center gap-2 px-6 py-3 text-2xl font-bold"
+              className="flex items-center gap-2 bg-cyan px-6 py-3 text-xl font-bold"
             >
               Let’s Talk <FaArrowUp />
-            </button>
+            </Link>
             <button
               data-collapse-toggle="navbar-sticky"
               type="button"
@@ -87,15 +88,15 @@ export default function Page() {
                 return (
                   <li
                     key={index}
-                    className={`${isActiveMenu || hasActiveSubmenu ? "border-cyan" : ""} hover:border-cyan relative border-b-4 border-white hover:border-b-4`}
+                    className={`${isActiveMenu || hasActiveSubmenu ? "border-cyan" : ""} relative border-b-4 border-white hover:border-b-4 hover:border-cyan`}
                   >
                     {/* For menu items with no submenus, use a Link component */}
                     {!menu.submenu ? (
                       <Link
                         href={menu.menuUrl}
-                        className={`block rounded px-3 py-2 text-2xl font-normal  ${
+                        className={`block rounded px-3 py-2 text-xl font-normal  ${
                           isActiveMenu || hasActiveSubmenu
-                            ? "font-bold text-cyan-500"
+                            ? "text-cyan-500 font-bold"
                             : "text-black"
                         }`} // Add active class based on the current path
                       >
@@ -105,9 +106,9 @@ export default function Page() {
                       // For items with a submenu, use a <button> instead of <Link>
                       <button
                         onClick={() => toggleSubmenu(index)}
-                        className={`block w-full rounded border-0 bg-transparent px-3 py-2 text-left text-2xl font-normal ${
+                        className={`block w-full rounded border-0 bg-transparent px-3 py-2 text-left text-xl font-normal ${
                           isActiveMenu || hasActiveSubmenu
-                            ? "font-bold text-cyan-500"
+                            ? "text-cyan-500 font-bold"
                             : "text-black"
                         }`}
                       >
