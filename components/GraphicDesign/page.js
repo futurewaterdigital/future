@@ -31,7 +31,7 @@ export default function page() {
       <div className="flex items-center">
         <Image
           src="/images/graphic-design.png"
-          className="h-[600px]"
+          className="h-[600px] w-full"
           width={300}
           height={600}
           alt="graphic-design"
