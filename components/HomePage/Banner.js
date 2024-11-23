@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Banner() {
   return (
-    <div className="hd:h-[800px] hd:bg-red-500 h-screen bg-[#020D17]">
-      <section class="h-[80vh] bg-[url('/images/banner.png')] bg-cover bg-center bg-no-repeat">
+    <div className="hd:h-[800px] h-screen bg-[#020D17]">
+      <section class="h-full bg-[url('/images/banner.png')] bg-cover bg-center bg-no-repeat">
         <div class="py-54 absolute top-48 w-9/12 px-40">
           <p className="text-2xl text-white">Ready to make a splash in the</p>
           <h1 class="mb-4 text-7xl font-bold uppercase leading-none tracking-tight text-cyan">
