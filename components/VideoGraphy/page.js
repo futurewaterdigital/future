@@ -6,7 +6,7 @@ export default function page() {
   return (
     <div className="pt-38 grid grid-cols-2 bg-[#020D17] py-12">
       <div className="mx-auto w-10/12 pt-40 text-white">
-        <h1 class="text-cyan mb-4 text-5xl font-bold uppercase leading-none tracking-tight">
+        <h1 class="mb-4 text-5xl font-bold uppercase leading-none tracking-tight text-cyan">
           Videography
         </h1>
         <p>
@@ -17,7 +17,7 @@ export default function page() {
         <div>
           {VideoGraphy.map((items, index) => (
             <div className="space-y-2 py-4" key={index}>
-              <div className="h-[4.5em] w-full rounded-2xl bg-[#00FFF3] pr-2">
+              <div className="h-[4.5em] w-full rounded-2xl bg-cyan pr-2">
                 <div className="z-50 flex h-[4em] gap-4 rounded-2xl bg-white p-4">
                   <div className="">
                     <h2 className="text-2xl uppercase text-black">
@@ -34,7 +34,12 @@ export default function page() {
       </div>
 
       <div className="flex items-center">
-        <Image src="/images/videography.png" width={500} height={500} />
+        <Image
+          src="/images/videography.png"
+          width={500}
+          height={500}
+          alt="videography"
+        />
       </div>
     </div>
   );

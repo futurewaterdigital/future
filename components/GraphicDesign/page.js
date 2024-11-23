@@ -1,11 +1,12 @@
 import React from "react";
 import { GraphicDesign } from "@/utils/data";
+import Image from "next/image";
 
 export default function page() {
   return (
     <div className="pt-38 grid grid-cols-2 bg-[#020D17] py-12">
       <div className="mx-auto w-10/12 pt-40 text-white">
-        <h1 class="text-cyan mb-4 text-5xl font-bold uppercase leading-none tracking-tight">
+        <h1 class="mb-4 text-5xl font-bold uppercase leading-none tracking-tight text-cyan">
           Graphic Design
         </h1>
         <p>
@@ -16,10 +17,10 @@ export default function page() {
         <div>
           {GraphicDesign.map((items, index) => (
             <div className="space-y-2 py-4" key={index}>
-              <h2 className="mb-2 text-2xl uppercase text-[#00FFF3]">
+              <h2 className="mb-2 text-2xl uppercase text-cyan">
                 {items.name}
               </h2>
-              <div className="rounded-2xl bg-white p-4 py-4 text-black">
+              <div className="rounded-2xl bg-white p-4 text-black">
                 {items.description}
               </div>
             </div>
@@ -28,7 +29,13 @@ export default function page() {
       </div>
 
       <div className="flex items-center">
-        <img src="/images/graphic-design.png" className="h-[600px]" />
+        <Image
+          src="/images/graphic-design.png"
+          className="h-[600px]"
+          width={300}
+          height={600}
+          alt="graphic-design"
+        />
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation"; // Import the usePathname hook
 import { MainMenu } from "@/utils/data";
 import Link from "next/link";
 import { FaArrowUp } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Page() {
   // State to manage which submenu is open
@@ -34,10 +35,12 @@ export default function Page() {
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img
+            <Image
               src="/images/logo.svg"
               className="h-12"
               alt="Futur Water Digital"
+              width={300}
+              height={100}
             />
           </Link>
           <div className="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
@@ -51,13 +54,13 @@ export default function Page() {
             <button
               data-collapse-toggle="navbar-sticky"
               type="button"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+              className="inline-flex size-20 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
               aria-controls="navbar-sticky"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
               <svg
-                className="h-5 w-5"
+                className="size-5"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -96,7 +99,7 @@ export default function Page() {
                         href={menu.menuUrl}
                         className={`block rounded px-3 py-2 text-xl font-normal  ${
                           isActiveMenu || hasActiveSubmenu
-                            ? "text-cyan-500 font-bold"
+                            ? "font-bold text-cyan"
                             : "text-black"
                         }`} // Add active class based on the current path
                       >
@@ -108,7 +111,7 @@ export default function Page() {
                         onClick={() => toggleSubmenu(index)}
                         className={`block w-full rounded border-0 bg-transparent px-3 py-2 text-left text-xl font-normal ${
                           isActiveMenu || hasActiveSubmenu
-                            ? "text-cyan-500 font-bold"
+                            ? "font-bold text-cyan"
                             : "text-black"
                         }`}
                       >
@@ -123,7 +126,7 @@ export default function Page() {
                         className="absolute -right-4 top-1/2 -translate-y-1/2 transform text-gray-500"
                       >
                         <svg
-                          className={`h-5 w-5 ${openSubmenu === index ? "rotate-180" : ""}`}
+                          className={`size-5 ${openSubmenu === index ? "rotate-180" : ""}`}
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 10 6"

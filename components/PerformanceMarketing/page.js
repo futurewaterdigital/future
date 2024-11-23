@@ -7,7 +7,7 @@ export default function page() {
     <div className="  bg-[#020D17] pt-40">
       <div className="grid w-full grid-cols-2">
         <div className="mx-auto flex w-8/12 flex-col justify-center ">
-          <h1 class="text-cyan mb-4 text-5xl font-bold uppercase leading-none tracking-tight">
+          <h1 class="mb-4 text-5xl font-bold uppercase leading-none tracking-tight text-cyan">
             Performance Marketing
           </h1>
 
@@ -17,7 +17,12 @@ export default function page() {
           </p>
         </div>
         <div>
-          <Image src="/images/digital-marketing.png" width={500} height={500} />
+          <Image
+            src="/images/digital-marketing.png"
+            width={500}
+            height={500}
+            alt="digital-marketing"
+          />
         </div>
       </div>
       <div className="mx-auto grid w-10/12 grid-cols-2 gap-8 py-12">

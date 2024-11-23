@@ -43,6 +43,7 @@ export default function Page() {
             className="h-20"
             width={200}
             height={200}
+            alt="Future Water Digital Marketing Services"
           />
         </div>
         <div className="flex flex-col justify-center text-center">
@@ -68,7 +69,7 @@ export default function Page() {
             <div className="relative">
               <div className="pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3.5">
                 <svg
-                  className="h-4 w-4 text-gray-500 dark:text-gray-400"
+                  className="size-4 text-gray-500 dark:text-gray-400"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -83,7 +84,7 @@ export default function Page() {
                 // id="email"
                 name="email"
                 id="email-address-icon"
-                className="block h-12 w-full rounded-lg border border-gray-300 bg-gray-200 p-2.5 ps-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                className="block h-12 w-full rounded-lg border border-gray-300 bg-gray-200 p-2.5 ps-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)} // Update email state on change

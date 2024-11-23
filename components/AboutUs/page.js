@@ -1,10 +1,11 @@
 import React from "react";
+import Image from "next/image";
 
 export default function page() {
   return (
-    <div className="grid h-screen grid-cols-2 bg-[#020D17]">
+    <div className="grid h-screen grid-cols-2 overflow-hidden bg-[#020D17]">
       <div className="mx-auto w-10/12 pt-40 text-white">
-        <h1 class="text-cyan mb-4 text-5xl font-bold leading-none tracking-tight">
+        <h1 class="mb-4 text-5xl font-bold leading-none tracking-tight text-cyan">
           About Us
         </h1>
         <p>
@@ -38,7 +39,13 @@ export default function page() {
         </p>
       </div>
       <div>
-        <img src="/images/about-us.png" />
+        <Image
+          src="/images/about-us.png"
+          width={200}
+          height={200}
+          alt="Future Water Digital Marketing Agency"
+          className="w-full"
+        />
       </div>
     </div>
   );
