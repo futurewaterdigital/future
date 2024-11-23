@@ -5,8 +5,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Service() {
   return (
-    <div className="h-screen bg-[#020D17]">
-      <section class="h-[80vh] bg-[url('/images/service.png')] bg-cover bg-center bg-no-repeat">
+    <div className="min-h-screen bg-[#020D17]">
+      <section class="min-h-[80vh] bg-[url('/images/service.png')] bg-cover bg-center bg-no-repeat">
         <div class="py-54 top-40 mx-auto w-10/12 px-40 text-center">
           <h1 class="mb-4 text-5xl font-bold leading-none tracking-tight text-cyan">
             Our Services
