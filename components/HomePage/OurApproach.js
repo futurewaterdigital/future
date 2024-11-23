@@ -6,7 +6,7 @@ export default function Approach() {
     <div className="min-h-screen bg-[#020D17]">
       <section class="flex h-full flex-col justify-center bg-[url('/images/approach.png')] bg-cover bg-center bg-no-repeat">
         <div class="py-54 top-90 mx-auto w-10/12 px-40 text-center">
-          <h1 class="hd:text-2xl mb-4 text-5xl font-bold leading-none tracking-tight text-cyan">
+          <h1 class="mb-4 text-5xl font-bold leading-none tracking-tight text-cyan sm:text-4xl md:text-xl lg:text-6xl">
             Let Future Water Digital help your<br></br> brand make waves!
           </h1>
           <p class="mb-8 mt-12 text-lg font-normal text-white">
