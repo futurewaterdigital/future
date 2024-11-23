@@ -17,7 +17,7 @@ const config: Config = {
         cyan: "#00FFF3",
       },
       screens: {
-        hd: { raw: "(min-width: 1280px) and (min-height: 720px)" },
+        hd: { raw: "(min-width: 1920px) and (min-height: 1080px)" },
       },
     },
   },
