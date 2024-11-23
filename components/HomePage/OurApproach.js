@@ -3,8 +3,8 @@ import { OurApproach } from "@/utils/data";
 
 export default function Approach() {
   return (
-    <div className="h-screen bg-[#020D17]">
-      <section class="flex h-[80vh] flex-col justify-center bg-[url('/images/approach.png')] bg-cover bg-center bg-no-repeat">
+    <div className="hd:h-[800px] h-screen bg-[#020D17]">
+      <section class="flex h-full flex-col justify-center bg-[url('/images/approach.png')] bg-cover bg-center bg-no-repeat">
         <div class="py-54 top-90 mx-auto w-10/12 px-40 text-center">
           <h1 class="mb-4 text-5xl font-bold leading-none tracking-tight text-cyan">
             Let Future Water Digital help your<br></br> brand make waves!
