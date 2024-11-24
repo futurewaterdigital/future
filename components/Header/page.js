@@ -31,10 +31,10 @@ export default function Page() {
   return (
     <div>
       <nav className="absolute start-0 top-6 z-20 w-full border-b border-gray-200 bg-white dark:border-gray-600 dark:bg-gray-900 lg:py-4">
-        <div className="mx-auto flex max-w-screen-xl flex-row flex-wrap items-center justify-between p-2">
+        <div className="mx-auto flex max-w-screen-xl flex-row flex-wrap items-center justify-between bg-yellow-200 p-2">
           <Link
             href="/"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
+            className="flex items-center space-x-3 bg-red-500 rtl:space-x-reverse"
           >
             <Image
               src="/images/logo.svg"
@@ -44,7 +44,7 @@ export default function Page() {
               height={100}
             />
           </Link>
-          <div className="flex items-center gap-2 md:order-2 md:space-x-0 lg:gap-8 lg:space-x-3 rtl:space-x-reverse">
+          <div className="flex items-center gap-2 bg-green-400 md:order-2 md:space-x-0 lg:gap-8 lg:space-x-3 rtl:space-x-reverse">
             <Link
               href="/contact-us"
               type="button"
