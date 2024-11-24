@@ -31,14 +31,14 @@ export default function Page() {
   return (
     <div>
       <nav className="absolute start-0 top-6 z-20 w-full border-b border-gray-200 bg-white dark:border-gray-600 dark:bg-gray-900 lg:py-4">
-        <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-2">
+        <div className="mx-auto flex max-w-screen-xl flex-row flex-wrap items-center justify-between p-2">
           <Link
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <Image
               src="/images/logo.svg"
-              className="h-10 w-full sm:h-6 md:h-8 lg:h-12"
+              className="h-8 w-full sm:h-6 md:h-8 lg:h-12"
               alt="Futur Water Digital"
               width={300}
               height={100}
