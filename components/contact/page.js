@@ -134,18 +134,18 @@ export default function Page() {
             and achieve success.
           </p>
           <div className="pt-8">
-            <h3 className="text-xl text-white">Indian</h3>
+            <h3 className="text-xl text-white"></h3>
             <hr />
             <p className="flex items-center gap-4 py-2 pt-8 text-white">
-              <PiMapPinAreaLight color="cyan" /> #549, 2nd Floor, 14th Main,
-              Sector 7, HSR Layout, Bangalore - 560102
+              <PiMapPinAreaLight color="cyan" /> #549,14th Main, Sector 7, HSR
+              Layout, Bangalore - 560102
             </p>
             <p className="flex items-center gap-4 py-2 text-white">
               <PiEnvelopeSimpleThin color="cyan" />{" "}
               quench@futurewaterdigital.com
             </p>
             <p className="flex items-center gap-4 py-2 text-white">
-              <BsTelephone color="cyan" /> +91 97409 88233
+              <BsTelephone color="cyan" /> +91 70190 34456
             </p>
           </div>
         </div>
