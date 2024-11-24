@@ -34,11 +34,11 @@ export default function Page() {
         <div className="mx-auto flex max-w-screen-xl flex-row flex-wrap items-center justify-between bg-yellow-200 p-2">
           <Link
             href="/"
-            className="flex items-center space-x-3 bg-red-500 rtl:space-x-reverse"
+            className="flex w-[100px] items-center space-x-3 bg-red-500 lg:w-[300px] rtl:space-x-reverse"
           >
             <Image
               src="/images/logo.svg"
-              className="h-6 w-full sm:h-6 md:h-8 lg:h-12"
+              className="h-6 sm:h-6 md:h-8 lg:h-12"
               alt="Futur Water Digital"
               width={300}
               height={100}
