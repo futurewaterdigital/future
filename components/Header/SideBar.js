@@ -219,7 +219,7 @@ export default function SideBar() {
             href="/contact-us"
             className="w-full border bg-cyan px-12 py-4 text-black"
           >
-            Let's Talk
+            Let`&lsquo;s Talk
           </Link>
         </div>
       </div>
