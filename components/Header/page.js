@@ -5,6 +5,7 @@ import { MainMenu } from "@/utils/data";
 import Link from "next/link";
 import { FaArrowUp } from "react-icons/fa";
 import Image from "next/image";
+import Sidebar from "./SideBar";
 
 export default function Page() {
   // State to manage which submenu is open
@@ -29,52 +30,29 @@ export default function Page() {
 
   return (
     <div>
-      <nav className="absolute start-0 top-4 z-20 w-full border-b border-gray-200 bg-white dark:border-gray-600 dark:bg-gray-900">
-        <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
+      <nav className="absolute start-0 top-6 z-20 w-full border-b border-gray-200 bg-white dark:border-gray-600 dark:bg-gray-900 lg:py-4">
+        <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-2">
           <Link
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <Image
               src="/images/logo.svg"
-              className="h-12"
+              className="h-10 w-full sm:h-6 md:h-8 lg:h-12"
               alt="Futur Water Digital"
               width={300}
               height={100}
             />
           </Link>
-          <div className="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
+          <div className="flex items-center gap-2 md:order-2 md:space-x-0 lg:gap-8 lg:space-x-3 rtl:space-x-reverse">
             <Link
               href="/contact-us"
               type="button"
-              className="flex items-center gap-2 bg-cyan px-6 py-3 text-xl font-bold"
+              className="flex items-center gap-2 bg-cyan px-4 py-2 font-bold sm:px-4 sm:py-2 sm:text-[12px] md:px-6 md:py-2 md:text-sm lg:text-xl"
             >
               Let’s Talk <FaArrowUp />
             </Link>
-            <button
-              data-collapse-toggle="navbar-sticky"
-              type="button"
-              className="inline-flex size-20 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
-              aria-controls="navbar-sticky"
-              aria-expanded="false"
-            >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className="size-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
-            </button>
+            <Sidebar />
           </div>
           <div
             className="hidden w-full items-center justify-between md:order-1 md:flex md:w-auto"
@@ -97,7 +75,7 @@ export default function Page() {
                     {!menu.submenu ? (
                       <Link
                         href={menu.menuUrl}
-                        className={`block rounded px-3 py-2 text-xl font-normal  ${
+                        className={`block rounded px-3 py-2 font-normal md:text-sm lg:text-lg  ${
                           isActiveMenu || hasActiveSubmenu
                             ? "font-bold text-cyan"
                             : "text-black"
@@ -109,7 +87,7 @@ export default function Page() {
                       // For items with a submenu, use a <button> instead of <Link>
                       <button
                         onClick={() => toggleSubmenu(index)}
-                        className={`block w-full rounded border-0 bg-transparent px-3 py-2 text-left text-xl font-normal ${
+                        className={`block w-full rounded border-0 bg-transparent px-3 py-2 text-left font-normal md:text-sm lg:text-lg ${
                           isActiveMenu || hasActiveSubmenu
                             ? "font-bold text-cyan"
                             : "text-black"
@@ -123,10 +101,10 @@ export default function Page() {
                     {menu.submenu && (
                       <button
                         onClick={() => toggleSubmenu(index)}
-                        className="absolute -right-4 top-1/2 -translate-y-1/2 transform text-gray-500"
+                        className="absolute -right-1 top-1/2 -translate-y-1/2 transform text-gray-500"
                       >
                         <svg
-                          className={`size-5 ${openSubmenu === index ? "rotate-180" : ""}`}
+                          className={`size-3 ${openSubmenu === index ? "rotate-180" : ""}`}
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 10 6"
@@ -153,9 +131,9 @@ export default function Page() {
                             <Link
                               href={submenuItem.menuUrl}
                               onClick={handleSubmenuClick} // Close submenu when a submenu item is clicked
-                              className={`block px-4 py-2  hover:bg-gray-100 ${
+                              className={`block px-4 py-2 text-sm hover:bg-gray-100 ${
                                 router === submenuItem.menuUrl
-                                  ? "bg-cyan font-bold"
+                                  ? "bg-cyan text-sm font-bold"
                                   : "text-gray-700"
                               }`} // Add active class for submenu items
                             >

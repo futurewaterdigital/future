@@ -4,39 +4,43 @@ import Image from "next/image";
 
 export default function page() {
   return (
-    <div className="  bg-[#020D17] pt-40">
-      <div className="grid w-full grid-cols-2">
-        <div className="mx-auto flex w-8/12 flex-col justify-center ">
-          <h1 class="mb-4 text-5xl font-bold uppercase leading-none tracking-tight text-cyan">
+    <div className=" z-20 bg-[#020D17] pt-40">
+      <div className="grid w-full lg:grid-cols-2">
+        <div className="order-2 mx-auto flex w-9/12 flex-col justify-center lg:order-1">
+          <h1 class="mb-4 text-3xl font-bold uppercase leading-none tracking-tight text-cyan md:text-3xl lg:text-5xl">
             Digital Marketing
           </h1>
 
-          <p className="text-white">
+          <p className="text-[14px] text-white lg:text-lg">
             At Future Water Digital, we harness the power of digital channels to
             elevate your brand&apos;s online presence. Our digital marketing
             services include:
           </p>
         </div>
-        <div>
+
+        <div className="flex justify-center md:order-1 md:items-center md:justify-center lg:order-2">
           <Image
             src="/images/digital-marketing.png"
-            width={400}
-            height={400}
-            alt="Future Water Digital Marketing Services"
+            width={200}
+            height={200}
+            alt="Future Water Digital Marketing Agency"
+            className="w-[300px] lg:w-full"
           />
         </div>
       </div>
-      <div className="mx-auto grid w-11/12 grid-cols-3 gap-8 py-12">
+      <div className="z-0 mx-auto grid gap-16 px-4 py-12 md:grid-cols-2 lg:w-10/12 lg:grid-cols-3">
         {DigitalMarketing.map((items, index) => (
-          <div className="mx-auto w-11/12" key={index}>
-            <div className="relative z-50 h-[6.5em] w-full rounded-full bg-[#00FFF3] p-4">
-              <div className="absolute -left-10 -top-0 z-0 flex h-[6.5em] w-[24em] items-center justify-center rounded-full bg-white p-4">
-                <h2 className="ml-10 flex w-full justify-center text-3xl text-black">
-                  {items.name}
+          <div className="" key={index}>
+            <div className="relative z-0 h-[3.5em] w-full rounded-full bg-[#00FFF3] p-4 sm:h-[3em] md:h-[3em] lg:h-[6.5em]">
+              <div className="absolute -left-0 -top-2 z-0 flex w-full items-center justify-center rounded-full bg-white p-4 sm:h-[3em] md:h-[3em] lg:-left-12 lg:-top-0 lg:h-[6.5em] lg:w-[24em]">
+                <h2 className="z-0 flex w-full justify-center text-center text-black sm:text-sm md:text-lg lg:text-2xl xl:text-2xl">
+                  {items.name} -r
                 </h2>
               </div>
             </div>
-            <p className="max-w-sm pt-8 text-white">{items.description}</p>
+            <p className="pt-8 text-[14px] text-white lg:max-w-sm lg:text-lg">
+              {items.description}
+            </p>
           </div>
         ))}
       </div>

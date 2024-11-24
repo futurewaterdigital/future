@@ -105,15 +105,15 @@ export default function Page() {
   };
 
   return (
-    <div className="bg-[#020D17] pt-40">
-      <section className="bg-[url('/images/contact-us.png')] bg-cover bg-center bg-no-repeat">
-        <div className="mx-auto max-w-screen-xl px-4 text-start lg:py-40">
-          <h1 className="text-cyan mb-4 ml-40 text-4xl font-extrabold leading-none tracking-tight">
+    <div className="bg-[#020D17] lg:pt-40">
+      <section className="h-[40vh] bg-[url('/images/contact-us.png')] bg-cover bg-center bg-no-repeat">
+        <div className="mx-auto flex h-full items-end px-4 lg:max-w-screen-xl lg:py-40 lg:text-start">
+          <h1 className="mb-4 ml-40 text-4xl font-extrabold leading-none tracking-tight text-cyan">
             Contact Us
           </h1>
         </div>
       </section>
-      <div className="mx-auto grid w-11/12 grid-cols-2 py-24">
+      <div className="mx-auto grid w-11/12 py-24 lg:grid-cols-2">
         <div>
           <h2 className="text-2xl font-bold uppercase text-white">
             Why Choose Future Water Digital?
@@ -151,7 +151,7 @@ export default function Page() {
         </div>
 
         <div>
-          <div className="mx-auto w-9/12 bg-[#111B2A]">
+          <div className="mx-auto w-full bg-[#111B2A] lg:w-9/12">
             {success ? (
               <div className="mx-auto flex flex-col items-center justify-center py-12 text-center">
                 <Image
@@ -258,7 +258,7 @@ export default function Page() {
 
                 <button
                   type="submit"
-                  className="bg-cyan mx-20 flex items-center gap-4 px-5 py-2.5 text-center text-sm font-medium text-black"
+                  className="flex items-center gap-4 bg-cyan px-5 py-2.5 text-center text-sm font-medium text-black lg:mx-20"
                 >
                   Connect With FutureWater Today <FaArrowUp />
                 </button>

@@ -36,7 +36,7 @@ export default function Page() {
 
   return (
     <div className="bg-[#F5F3F3]">
-      <div className="mx-auto grid w-11/12 grid-cols-3 py-8">
+      <div className="mx-auto grid px-4 py-8 lg:w-11/12 lg:grid-cols-3">
         <div>
           <Image
             src="/images/logo.svg"

@@ -3,26 +3,26 @@ import Link from "next/link";
 
 export default function Banner() {
   return (
-    <div className="min-h-screen bg-[#020D17]">
-      <section class="min-h-[80vh] bg-[url('/images/banner.png')] bg-cover bg-center bg-no-repeat">
-        <div class="py-54 absolute top-48 w-9/12 px-40">
+    <div className="bg-[#020D17]">
+      <section class="h-full bg-[url('/images/banner.png')] bg-cover bg-center bg-no-repeat lg:min-h-[80vh]">
+        <div class="top-48 mx-auto px-6 pb-28 pt-48 md:w-10/12 lg:w-10/12 lg:pr-48">
           <p className="text-2xl text-white">Ready to make a splash in the</p>
-          <h1 class="mb-4 text-7xl font-bold uppercase leading-none tracking-tight text-cyan">
+          <h1 class="mb-4 text-4xl font-bold uppercase leading-none tracking-tight text-cyan sm:text-4xl md:text-5xl">
             Digital World?
           </h1>
-          <p class="mb-8 text-lg font-normal text-white">
+          <p class="mb-8 font-normal text-white md:text-[14px] lg:text-lg">
             Welcome to Futurewater Digital, a 360-degree digital marketing
             agency built on the perfect blend of experience and innovation. With
             over 20 years of expertise in advertising, communication, and
             digital marketing, we understand the foundational principles that
             drive successful brand growth.
           </p>
-          <p class="mb-8 text-lg font-normal text-white">
+          <p class="mb-8 font-normal text-white md:text-[14px] lg:text-lg">
             We don’t stop there - by integrating advanced technology and AI into
             every strategy, we offer clients a forward-looking approach that
             positions them ahead of the competition. 
           </p>
-          <p class="mb-8 text-lg font-normal text-white">
+          <p class="mb-8 font-normal text-white md:text-[14px] lg:text-lg">
             The name Futurewater Digital reflects this unique philosophy. Just
             as water is vital for sustaining life, we believe that
             forward-thinking digital solutions are essential for business
