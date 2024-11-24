@@ -34,7 +34,7 @@ export default function Page() {
         <div className="mx-auto flex max-w-screen-xl flex-row flex-wrap items-center justify-between bg-yellow-200 p-2">
           <Link
             href="/"
-            className="flex w-[150px] items-center space-x-3 bg-red-500 lg:w-[300px] rtl:space-x-reverse"
+            className="flex w-[150px] items-center space-x-3 bg-red-500 sm:w-full lg:w-[300px] rtl:space-x-reverse"
           >
             <Image
               src="/images/logo.svg"
