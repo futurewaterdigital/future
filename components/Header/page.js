@@ -38,7 +38,7 @@ export default function Page() {
           >
             <Image
               src="/images/logo.svg"
-              className="h-6 sm:h-6 md:h-8 lg:h-12"
+              className="h-8 sm:h-6 md:h-8 lg:h-12"
               alt="Futur Water Digital"
               width={300}
               height={100}
