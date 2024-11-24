@@ -9,6 +9,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { useForm, ValidationError } from "@formspree/react";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 export default function Page() {
   const router = usePathname();
@@ -109,7 +110,14 @@ export default function Page() {
           )}
         </div>
       </div>
-
+      <FloatingWhatsApp
+        phoneNumber="7019034456"
+        accountName="Future Water"
+        avatar="https://staging.futurewaterdigital.com/images/logo.svg"
+        statusMessage="Future Water Digital"
+        chatMessage="Welcome to Future Water Digital How can we help you?"
+        placeholder="Send your query"
+      />
       <div className="mx-auto mt-4 flex w-11/12 items-center justify-between border-t border-gray-300 py-4">
         <div>© Copyright Futurewater 2024</div>
         <div className="flex gap-2">
