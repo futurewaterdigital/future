@@ -112,7 +112,7 @@ export default function Page() {
       </div>
       <FloatingWhatsApp
         phoneNumber="7019034456"
-        accountName="Future Water"
+        accountName="Futurewater"
         avatar="https://staging.futurewaterdigital.com/images/logo.svg"
         statusMessage="Future Water Digital"
         chatMessage="Welcome to Future Water Digital How can we help you?"
