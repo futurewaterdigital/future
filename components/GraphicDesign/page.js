@@ -30,8 +30,8 @@ export default function page() {
       <div className="flex justify-center sm:order-1 sm:items-center sm:justify-center sm:pt-20 md:order-1 md:items-center md:justify-center md:pt-20 lg:order-2">
         <Image
           src="/images/graphic-design.png"
-          width={200}
-          height={200}
+          width={400}
+          height={400}
           alt="Future Water Digital Marketing Agency"
           className="w-[300px] lg:w-full"
         />
