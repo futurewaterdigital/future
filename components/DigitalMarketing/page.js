@@ -34,7 +34,7 @@ export default function page() {
             <div className="relative z-0 h-[3.5em] w-full rounded-full bg-[#00FFF3] p-4 sm:h-[3em] md:h-[3em] lg:h-[6.5em]">
               <div className="absolute -left-0 -top-2 z-0 flex w-full items-center justify-center rounded-full bg-white p-4 sm:h-[3em] md:h-[3em] lg:-left-12 lg:-top-0 lg:h-[6.5em] lg:w-[24em]">
                 <h2 className="z-0 flex w-full justify-center text-center text-black sm:text-sm md:text-lg lg:text-2xl xl:text-2xl">
-                  {items.name} -r
+                  {items.name}
                 </h2>
               </div>
             </div>
