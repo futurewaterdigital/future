@@ -10,6 +10,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { useForm, ValidationError } from "@formspree/react";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
+import CollectScript from "@/utils/CollectScript";
 
 export default function Page() {
   const router = usePathname();
@@ -137,6 +138,7 @@ export default function Page() {
           <FaLinkedin size={22} />
         </div>
       </div>
+      <CollectScript />
     </div>
   );
 }
