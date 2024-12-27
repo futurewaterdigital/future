@@ -1,6 +1,7 @@
 import React from "react";
 import { PerformanceMarketing } from "@/utils/data";
 import Image from "next/image";
+import LottieAnimation from "@/utils/LottieAnimation";
 
 export default function page() {
   return (
@@ -18,12 +19,19 @@ export default function page() {
         </div>
 
         <div className="flex justify-center md:order-1 md:items-center md:justify-center lg:order-2">
-          <Image
+          {/* <Image
             src="/images/digital-marketing.png"
             width={400}
             height={400}
             alt="Future Water Digital Marketing Agency"
             className="w-[300px] lg:w-full"
+          /> */}
+          <LottieAnimation
+            src="/lottie/performance_marketing.json"
+            height={700}
+            width={700}
+            autoplay={true}
+            loop={true}
           />
         </div>
       </div>

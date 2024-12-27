@@ -7,10 +7,10 @@ export default function Approach() {
       <section class="flex h-full flex-col justify-center bg-[url('/images/approach.png')] bg-cover bg-center bg-no-repeat">
         <div class="lg:py-54 top-90 mx-auto w-full text-center lg:w-10/12 lg:px-40">
           <h1 class="mb-4 text-2xl font-bold leading-none tracking-tight text-cyan md:text-2xl lg:text-3xl">
-            Let Future Water Digital help your<br></br> brand make waves!
+            Let Futurewater Digital help your<br></br> brand make waves!
           </h1>
           <p class="mb-8 mt-12 font-normal text-white md:text-[14px] lg:text-lg">
-            Let FutureWater Digital help you ride the wave of digital
+            Let Futurewater Digital help you ride the wave of digital
             innovation. We blend traditional marketing wisdom with cutting-edge
             AI to deliver impactful solutions that propel your brand forward.
           </p>

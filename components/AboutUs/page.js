@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import LottieAnimation from "@/utils/LottieAnimation";
 
 export default function page() {
   return (
@@ -38,13 +39,20 @@ export default function page() {
           backed by the essentials of expert strategy and innovative technology.
         </p>
       </div>
-      <div className="order-1 flex md:order-1 md:items-center md:justify-center lg:order-2">
-        <Image
+      <div className="order-1 flex pt-40 md:order-1 md:items-center md:justify-center lg:order-2">
+        {/* <Image
           src="/images/about-us.png"
           width={400}
           height={400}
           alt="Future Water Digital Marketing Agency"
           className="w-[300px] lg:w-full"
+        /> */}
+        <LottieAnimation
+          src="/lottie/about_us.json"
+          height={550}
+          width={550}
+          autoplay={true}
+          loop={true}
         />
       </div>
     </div>

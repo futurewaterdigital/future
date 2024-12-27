@@ -1,6 +1,7 @@
 import React from "react";
 import { VideoGraphy } from "@/utils/data";
 import Image from "next/image";
+import LottieAnimation from "@/utils/LottieAnimation";
 
 export default function page() {
   return (
@@ -32,13 +33,20 @@ export default function page() {
           ))}
         </div>
       </div>
-      <div className="flex justify-center md:order-1 md:items-center md:justify-center md:pt-20 lg:order-2">
-        <Image
+      <div className="flex justify-center md:order-1 md:items-center md:justify-center md:pt-10 lg:order-2">
+        {/* <Image
           src="/images/videography.png"
           width={400}
           height={400}
           alt="Future Water Digital Marketing Agency"
           className="w-[300px] lg:w-full"
+        /> */}
+        <LottieAnimation
+          src="/lottie/videography.json"
+          height={550}
+          width={550}
+          autoplay={true}
+          loop={true}
         />
       </div>
     </div>

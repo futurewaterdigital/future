@@ -29,23 +29,13 @@ export const OurApproach = [
     description:
       "Leveraging the latest digital marketing tools and technologies to stay ahead of industry trends and deliver innovative solutions.",
   },
-  {
-    title: "Data-Driven Approach",
-    description:
-      "Utilising data analytics to inform and optimise marketing strategies, ensuring campaigns are effective and deliver measurable results.",
-  },
-  {
-    title: "Data-Driven Approach",
-    description:
-      "Utilising data analytics to inform and optimise marketing strategies, ensuring campaigns are effective and deliver measurable results.",
-  },
 ];
 
 export const OurServices = [
   {
     name: "Digital Marketing",
     description:
-      "At Future Water Digital, we harness the power of digital channels to elevate your brand's online presence.",
+      "At Futurewater Digital, we harness the power of digital channels to elevate your brand's online presence.",
     url: "/digital-marketing",
   },
   {

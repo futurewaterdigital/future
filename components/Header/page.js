@@ -39,7 +39,7 @@ export default function Page() {
             <Image
               src="/images/logo.svg"
               className="h-8 sm:h-6 md:h-8 lg:h-12"
-              alt="Futur Water Digital"
+              alt="Futurwater Digital"
               width={300}
               height={100}
             />
@@ -104,13 +104,17 @@ export default function Page() {
                         className="absolute -right-1 top-1/2 -translate-y-1/2 transform text-gray-500"
                       >
                         <svg
-                          className={`size-3 ${openSubmenu === index ? "rotate-180" : ""}`}
+                          className={`size-3 transition-all ${openSubmenu === index ? "rotate-180" : ""}`}
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 10 6"
                         >
                           <path
-                            stroke="currentColor"
+                            stroke={`${
+                              isActiveMenu || hasActiveSubmenu
+                                ? "cyan"
+                                : "black"
+                            }`}
                             strokeLinecap="round"
                             strokeLinejoin="round"
                             strokeWidth="2"
