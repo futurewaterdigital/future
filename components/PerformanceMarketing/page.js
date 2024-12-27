@@ -39,18 +39,20 @@ export default function page() {
       <div className="mx-auto grid w-10/12 gap-8 py-12 lg:grid-cols-2">
         {PerformanceMarketing.map((items, index) => (
           <div
-            className="min-h-[14em] w-full rounded-2xl bg-[#00FFF3] pr-2 pt-2"
+            className="group min-h-[14em] w-full rounded-2xl bg-[#00FFF3] pr-2 pt-2"
             key={index}
           >
-            <div className="z-50 flex min-h-[14em] gap-4 rounded-2xl bg-white p-4">
+            <div className="z-50 flex min-h-[14em] gap-4 rounded-2xl bg-white p-4 group-hover:scale-105 group-hover:bg-gray-800 group-hover:text-white">
               <div className="mt-2 ">
-                <span className="mt-8 rounded-full border-2 border-black px-4 py-2.5 ">
+                <span className="mt-8 rounded-full border-2 border-black px-4 py-2.5 group-hover:border-white">
                   {items.id}
                 </span>
               </div>
               <div className="w-full">
-                <h2 className="text-xl text-black lg:text-2xl">{items.name}</h2>
-                <p className="pt-8 text-black lg:max-w-sm">
+                <h2 className="text-xl text-black group-hover:text-cyan lg:text-2xl">
+                  {items.name}
+                </h2>
+                <p className="pt-8 text-black group-hover:text-white lg:max-w-sm">
                   {items.description}
                 </p>
               </div>

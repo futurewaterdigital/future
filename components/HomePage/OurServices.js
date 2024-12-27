@@ -31,9 +31,9 @@ export default function Service() {
                     </p>
                     <Link
                       href={items.url}
-                      className="text-md group flex items-center gap-4 bg-[#0C1348] p-2 text-white hover:bg-cyan hover:text-black lg:w-[200px] lg:p-4"
+                      className="text-md group group flex items-center gap-4 bg-[#0C1348] p-2 text-white hover:bg-cyan hover:text-black lg:w-[200px] lg:p-4"
                     >
-                      <FaArrowRightLong className="fill-white group-hover:fill-black" />{" "}
+                      <FaArrowRightLong className="fill-white transition-all group-hover:translate-x-2 group-hover:fill-black" />{" "}
                       Know More
                     </Link>
                   </div>

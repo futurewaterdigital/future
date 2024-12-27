@@ -121,9 +121,19 @@ export default function Page() {
       <div className="mx-auto mt-4 flex w-11/12 items-center justify-between border-t border-gray-300 py-4">
         <div>© Copyright Futurewater 2024</div>
         <div className="flex gap-2">
-          <FaFacebookSquare size={22} />
+          <Link
+            href="https://www.facebook.com/share/19wdGG1p7N/?mibextid=qi2Omg"
+            target="_blank"
+          >
+            <FaFacebookSquare size={22} />
+          </Link>
           <FaXTwitter size={22} />
-          <FaInstagram size={22} />
+          <Link
+            href="https://www.instagram.com/future_water_digital/profilecard/?igsh=MXJwcXA5eTdueXo3aw=="
+            target="_blank"
+          >
+            <FaInstagram size={22} />
+          </Link>
           <FaLinkedin size={22} />
         </div>
       </div>

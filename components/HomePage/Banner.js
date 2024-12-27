@@ -34,11 +34,11 @@ export default function Banner() {
           <div class="flex flex-col space-y-4 sm:flex-row sm:justify-start sm:space-y-0">
             <Link
               href="/contact-us"
-              class="inline-flex items-center justify-center bg-white px-5 py-3 text-center text-base font-medium text-[#171560] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+              class="hover:bg-white-800 group inline-flex items-center justify-center border bg-white px-5 py-3 text-center text-base font-medium text-[#171560] hover:border-white hover:bg-transparent hover:text-white focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
             >
               Get in Touch
               <svg
-                class="ms-2 h-3.5 w-3.5 rtl:rotate-180"
+                class="ms-2 h-3.5 w-3.5 transition-all group-hover:translate-x-2 rtl:rotate-180"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

@@ -36,9 +36,9 @@ export default function page() {
           />
         </div>
       </div>
-      <div className="z-0 mx-auto grid gap-16 px-4 py-12 md:grid-cols-2 lg:w-10/12 lg:grid-cols-3">
+      <div className=" z-0 mx-auto grid gap-16 px-4 py-12 md:grid-cols-2 lg:w-10/12 lg:grid-cols-3">
         {DigitalMarketing.map((items, index) => (
-          <div className="" key={index}>
+          <div className="group relative left-[20px]" key={index}>
             <div className="relative z-0 h-[3.5em] w-full rounded-full bg-[#00FFF3] p-4 sm:h-[3em] md:h-[3em] lg:h-[6.5em]">
               <div className="absolute -left-0 -top-2 z-0 flex w-full items-center justify-center rounded-full bg-white p-4 sm:h-[3em] md:h-[3em] lg:-left-12 lg:-top-0 lg:h-[6.5em] lg:w-[24em]">
                 <h2 className="z-0 flex w-full justify-center text-center text-black sm:text-sm md:text-lg lg:text-2xl xl:text-2xl">
@@ -46,7 +46,7 @@ export default function page() {
                 </h2>
               </div>
             </div>
-            <p className="pt-8 text-[14px] text-white lg:max-w-sm lg:text-lg">
+            <p className="relative right-[25px] mt-4 rounded-lg p-6 text-[14px] text-white transition-all group-hover:bg-gray-700 lg:max-w-sm lg:text-lg">
               {items.description}
             </p>
           </div>

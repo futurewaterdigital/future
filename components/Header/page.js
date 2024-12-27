@@ -48,10 +48,17 @@ export default function Page() {
             <Link
               href="/contact-us"
               type="button"
-              className="flex items-center gap-2 bg-cyan px-4 py-2 font-bold sm:px-4 sm:py-2 sm:text-[12px] md:px-6 md:py-2 md:text-sm lg:text-xl"
+              className="relative flex items-center gap-2 bg-cyan px-4 py-2 font-bold sm:px-4 sm:py-2 sm:text-[12px] md:px-6 md:py-2 md:text-sm lg:text-xl"
             >
               Let’s Talk <FaArrowUp />
+              {/* <div className="absolute right-0 top-[-10px]">
+                <span class="relative flex h-3 w-3">
+                  <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-600 opacity-75"></span>
+                  <span class="relative inline-flex h-3 w-3 rounded-full bg-red-600"></span>
+                </span>
+              </div> */}
             </Link>
+
             <Sidebar />
           </div>
           <div
