@@ -20,7 +20,7 @@ export default function Page() {
               <h2 className="mb-2 uppercase text-cyan lg:text-2xl">
                 {items.name}
               </h2>
-              <div className="rounded-2xl bg-white p-4 text-[14px] text-black lg:text-sm">
+              <div className="rounded-2xl bg-white p-4 text-[14px] text-black lg:text-[16px]">
                 {items.description}
               </div>
             </div>

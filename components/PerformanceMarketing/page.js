@@ -44,7 +44,7 @@ export default function page() {
           >
             <div className="z-50 flex min-h-[14em] gap-4 rounded-2xl bg-white p-4">
               <div className="mt-2 ">
-                <span className="mt-8 rounded-full border-2 border-black px-4 py-2.5">
+                <span className="mt-8 rounded-full border-2 border-black px-4 py-2.5 ">
                   {items.id}
                 </span>
               </div>

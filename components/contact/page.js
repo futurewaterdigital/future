@@ -6,6 +6,7 @@ import { useForm, ValidationError } from "@formspree/react";
 import { PiMapPinAreaLight } from "react-icons/pi";
 import { PiEnvelopeSimpleThin } from "react-icons/pi";
 import { BsTelephone } from "react-icons/bs";
+import LottieAnimation from "@/utils/LottieAnimation";
 
 export default function Page() {
   const [formData, setFormData] = useState({
@@ -105,14 +106,14 @@ export default function Page() {
   };
 
   return (
-    <div className="bg-[#020D17] lg:pt-40">
-      <section className="h-[40vh] bg-[url('/images/contact-us.png')] bg-cover bg-center bg-no-repeat">
+    <div className="bg-[#020D17] lg:pt-20">
+      {/* <section className="h-[40vh] bg-[url('/images/contact-us.png')] bg-cover bg-center bg-no-repeat">
         <div className="mx-auto flex h-full items-end px-4 lg:max-w-screen-xl lg:py-40 lg:text-start">
           <h1 className="mb-4 ml-40 text-4xl font-extrabold leading-none tracking-tight text-cyan">
             Contact Us
           </h1>
         </div>
-      </section>
+      </section> */}
       <div className="mx-auto grid w-11/12 py-24 lg:grid-cols-2">
         <div>
           <h2 className="text-2xl font-bold uppercase text-white">
@@ -133,24 +134,11 @@ export default function Page() {
             Let us help your brand navigate the ever-changing digital landscape
             and achieve success.
           </p>
-          <div className="pt-8">
+          <div className="py-8">
             <h3 className="text-xl text-white"></h3>
             <hr />
-            <p className="flex items-center gap-4 py-2 pt-8 text-white">
-              <PiMapPinAreaLight color="cyan" /> #549,14th Main, Sector 7, HSR
-              Layout, Bangalore - 560102
-            </p>
-            <p className="flex items-center gap-4 py-2 text-white">
-              <PiEnvelopeSimpleThin color="cyan" />{" "}
-              quench@futurewaterdigital.com
-            </p>
-            <p className="flex items-center gap-4 py-2 text-white">
-              <BsTelephone color="cyan" /> +91 70190 34456
-            </p>
           </div>
-        </div>
 
-        <div>
           <div className="mx-auto w-full bg-[#111B2A] lg:w-9/12">
             {success ? (
               <div className="mx-auto flex flex-col items-center justify-center py-12 text-center">
@@ -265,6 +253,33 @@ export default function Page() {
               </form>
             )}
           </div>
+          <div className="pt-8">
+            <h3 className="text-xl text-white"></h3>
+            <hr />
+            <p className="flex items-center gap-4 py-2 pt-8 text-white">
+              <BsTelephone color="cyan" /> +91 70190 34456
+            </p>
+
+            <p className="flex items-center gap-4 py-2 text-white">
+              <PiEnvelopeSimpleThin color="cyan" />{" "}
+              quench@futurewaterdigital.com
+            </p>
+            <p className="flex items-center gap-4 py-2 text-white">
+              <PiMapPinAreaLight color="cyan" />
+              Sector 7, HSR Layout, Bangalore
+            </p>
+          </div>
+        </div>
+
+        <div className="">
+          {" "}
+          <LottieAnimation
+            src="/lottie/contact_us.json"
+            height={700}
+            width={700}
+            autoplay={true}
+            loop={true}
+          />
         </div>
       </div>
     </div>

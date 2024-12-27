@@ -106,9 +106,9 @@ export const DigitalMarketing = [
 export const PerformanceMarketing = [
   {
     id: 1,
-    name: "Search Engine Optimization (SEO)",
+    name: "Pay-Per-Click Advertising (PPC)",
     description:
-      "Managing paid advertising campaigns on platforms like Google Ads, and social media networks to drive targeted traffic and maximise return on ad spend (RoAS).",
+      "Managing paid advertising campaigns on platforms like Meta,Google and other social media networks to drive targeted traffic and maximise return on ad spend (RoAS)",
   },
   {
     id: 2,
@@ -132,17 +132,17 @@ export const PerformanceMarketing = [
 
 export const GraphicDesign = [
   {
-    name: "Brand Identity Design : ",
+    name: "Brand Identity Design",
     description:
       "Develop a cohesive and memorable brand identity that resonates with your target audience.",
   },
   {
-    name: "Marketing Collateral :",
+    name: "Marketing Collateral",
     description:
-      "Design eye-catching brochures, flyers, posters, and other marketing materials to promote your brand.",
+      "Design eye-catching brochures, flyers, posters, and other marketing material to promote your brand.",
   },
   {
-    name: "Digital Graphics :",
+    name: "Digital Graphics",
     description:
       "Create engaging digital graphics for websites, social media, and email campaigns.",
   },
@@ -150,17 +150,17 @@ export const GraphicDesign = [
 
 export const VideoGraphy = [
   {
-    name: "Promotional Videos :",
+    name: "Promotional Videos",
     description:
       "Showcase your products or services with high-quality promotional videos.",
   },
   {
-    name: "Corporate Videos :",
+    name: "Corporate Videos",
     description:
       "Communicate your brand’s mission, vision, and values through compelling corporate videos.",
   },
   {
-    name: "Event Coverage :",
+    name: "Event Coverage",
     description:
       "Capture the essence of your events with our comprehensive event videography services.",
   },

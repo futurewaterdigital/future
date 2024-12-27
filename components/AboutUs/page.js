@@ -6,7 +6,7 @@ export default function page() {
   return (
     <div className="grid overflow-hidden bg-[#020D17] lg:grid-cols-2">
       <div className="order-2 mx-auto px-4 text-white md:order-2 lg:order-1 lg:pl-10 lg:pt-40">
-        <h1 class="mb-4 text-3xl font-bold leading-none tracking-tight text-cyan md:text-3xl lg:text-5xl">
+        <h1 class="mb-4 text-3xl font-bold uppercase leading-none tracking-tight text-cyan md:text-3xl lg:text-5xl">
           About Us
         </h1>
         <p className="md:text-[14px] lg:text-lg">
