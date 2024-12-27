@@ -4,7 +4,10 @@ import Link from "next/link";
 export default function Banner() {
   return (
     <div className="bg-[#020D17]">
-      <section class="h-full bg-[url('/images/banner.png')] bg-cover bg-center bg-no-repeat lg:min-h-[80vh]">
+      <section class="relative h-full overflow-hidden bg-[url('/images/banner.png')] bg-cover bg-center bg-no-repeat lg:min-h-[80vh]">
+        <div className="absolute left-[1200px] w-[900px]">
+          <img src="/images/circle.png" className=" animate-spin-slow w-full" />
+        </div>
         <div class="top-48 mx-auto px-6 pb-28 pt-48 md:w-10/12 lg:w-10/12 lg:pr-48">
           <p className="text-2xl text-white">Ready to make a splash in the</p>
           <h1 class="mb-4 text-4xl font-bold uppercase leading-none tracking-tight text-cyan sm:text-4xl md:text-5xl">

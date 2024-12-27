@@ -19,6 +19,9 @@ const config: Config = {
       screens: {
         hd: { raw: "(min-width: 768px)" },
       },
+      animation: {
+        "spin-slow": "spin 70s linear infinite", // You can adjust the duration (10s) to make it slower or faster
+      },
     },
   },
   plugins: [flowbite.plugin()],
