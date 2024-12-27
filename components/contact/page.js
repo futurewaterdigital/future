@@ -248,7 +248,7 @@ export default function Page() {
                   type="submit"
                   className="flex items-center gap-4 bg-cyan px-5 py-2.5 text-center text-sm font-medium text-black lg:mx-20"
                 >
-                  Connect With FutureWater Today <FaArrowUp />
+                  Connect With Futurewater Today <FaArrowUp />
                 </button>
               </form>
             )}

@@ -42,7 +42,7 @@ export default function page() {
           backed by the essentials of expert strategy and innovative technology.
         </p>
       </div>
-      <div className="order-1 flex pt-40 md:order-1 md:items-center md:justify-center lg:order-2">
+      <div className="order-1 flex pt-60 md:order-1 md:items-center md:justify-center lg:order-2">
         {/* <Image
           src="/images/about-us.png"
           width={400}
