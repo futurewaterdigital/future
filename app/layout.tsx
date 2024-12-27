@@ -6,12 +6,12 @@ import Footer from "../components/Footer/page";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  title: "Future Water Digital Marketing Company",
+  title: "Futurewater Digital Marketing Company",
   description: "Performance marketing agency based in Bangalore",
   metadataBase: new URL("https://healthcareinternational.in/"),
   openGraph: {
     url: "https://www.futurewaterdigital.com/",
-    title: "Future Water Digital Marketing Company",
+    title: "Futurewater Digital Marketing Company",
     description: "Performance marketing agency based in Bangalore",
     images: [
       {

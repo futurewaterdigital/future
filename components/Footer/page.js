@@ -114,8 +114,8 @@ export default function Page() {
         phoneNumber="7019034456"
         accountName="Futurewater"
         avatar="https://staging.futurewaterdigital.com/images/logo.svg"
-        statusMessage="Future Water Digital"
-        chatMessage="Welcome to Future Water Digital How can we help you?"
+        statusMessage="Futurewater Digital"
+        chatMessage="Welcome to Futurewater Digital How can we help you?"
         placeholder="Send your query"
       />
       <div className="mx-auto mt-4 flex w-11/12 items-center justify-between border-t border-gray-300 py-4">

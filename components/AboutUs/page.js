@@ -17,9 +17,12 @@ export default function page() {
         <p className="py-4 md:text-[14px] lg:text-lg">
           Our approach combines proven marketing strategies with cutting-edge
           technology to navigate the ever-evolving digital landscape and drive
-          tangible results. Whether it’s SEO, SEM, social media, design, or
-          development, we leverage our experience and innovation to create
-          impactful campaigns tailored to each client’s needs. 
+          tangible results. Whether it’s{" "}
+          <span className="text-cyan">
+            SEO, SEM, Social Media, Design, or Development
+          </span>
+          , we leverage our experience and innovation to create impactful
+          campaigns tailored to each client’s needs. 
         </p>
         <p className="py-4 md:text-[14px] lg:text-lg">
           Each member of our team is a seasoned professional, bringing a wealth
@@ -28,12 +31,12 @@ export default function page() {
           results for our clients, ensuring their success in an ever-evolving
           digital landscape. 
         </p>
-        <p className="py-4 md:text-[14px] lg:text-lg">
+        {/* <p className="py-4 md:text-[14px] lg:text-lg">
           Beyond performance marketing, we offer a comprehensive suite of
           services, including SEO, SEM, SMM, Design & Development and
           Videography, all leveraging the latest technologies and best practices
           in the industry.
-        </p>
+        </p> */}
         <p className="py-4 md:text-[14px] lg:text-lg">
           Partner with us, and let’s shape a future where your brand thrives,
           backed by the essentials of expert strategy and innovative technology.

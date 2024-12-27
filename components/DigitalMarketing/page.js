@@ -13,7 +13,7 @@ export default function page() {
           </h1>
 
           <p className="text-[14px] text-white lg:text-lg">
-            At Future Water Digital, we harness the power of digital channels to
+            At Futurewater Digital, we harness the power of digital channels to
             elevate your brand&apos;s online presence. Our digital marketing
             services include:
           </p>

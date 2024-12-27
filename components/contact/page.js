@@ -116,16 +116,16 @@ export default function Page() {
       <div className="mx-auto grid w-11/12 py-24 lg:grid-cols-2">
         <div>
           <h2 className="text-2xl font-bold uppercase text-white">
-            Why Choose Future Water Digital?
+            Why Choose Futurewater Digital?
           </h2>
           <p className="py-2 text-white">
-            At Future Water Digital, we don&apos;t just create campaigns, we
+            At Futurewater Digital, we don&apos;t just create campaigns, we
             cultivate lasting partnerships. We take the time to understand your
             unique business goals and challenges, then develop a data-driven,
             results-oriented strategy tailored to your specific needs.
           </p>
           <p className="py-2 text-white">
-            Partner with Future Water Digital and experience the difference of a
+            Partner with Futurewater Digital and experience the difference of a
             truly integrated marketing solution. Let&apos;s create the future
             together..
           </p>

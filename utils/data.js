@@ -72,14 +72,14 @@ export const DigitalMarketing = [
       "Creating and optimising websites for user experience, functionality, and conversion rates, ensuring they are mobile-friendly and aligned with SEO best practices.",
   },
   {
-    name: "Search Engine Optimization (SEO)",
+    name: "Search Engine Optimisation",
     description:
-      "Enhancing website visibility on search engines through keyword optimization, on-page and off-page SEO techniques, and technical SEO audits.",
+      "Enhancing website visibility on search engines through keyword optimisation, on-page and off-page SEO techniques, and technical SEO audits.",
   },
   {
     name: "Social Media Marketing",
     description:
-      "Creating and managing social media campaigns on platforms such as Facebook, Instagram, Twitter, LinkedIn, and TikTok to engage with audiences, build brand awareness, and drive traffic.",
+      "Creating and managing social media campaigns on platforms such as Facebook, Instagram, Twitter, LinkedIn and Youtube to engage with audiences, build brand awareness, and drive traffic.",
   },
   {
     name: "Content Marketing",
@@ -94,7 +94,7 @@ export const DigitalMarketing = [
   {
     name: "Influencer Marketing",
     description:
-      "Creating and managing Collaborating with influencers and bloggers to amplify brand messaging, reach new audiences, and build credibility through authentic endorsements.g social media campaigns on platforms such as Facebook, Instagram, Twitter, LinkedIn, and TikTok to engage with audiences, build brand awareness, and drive traffic.",
+      "Collaborating with influencers and bloggers to amplify brand messaging, reach new audiences, and build credibility through authentic endorsements.",
   },
   {
     name: "Online Reputation Management",
