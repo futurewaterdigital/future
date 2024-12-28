@@ -13,7 +13,7 @@ export default function Approach() {
         </div>
         <div class="lg:py-54 top-90 z-50 mx-auto mt-20 w-full text-center lg:w-10/12 lg:px-40">
           <h1 class="mb-4 text-2xl font-bold leading-none tracking-tight text-cyan md:text-2xl lg:text-3xl">
-            Let Futurewater Digital help your<br></br> brand make waves!
+            Futurewater Digital is here to help your<br></br> brand make waves!
           </h1>
           <p class="mb-8 mt-12 font-normal text-white md:text-[14px] lg:text-lg">
             Let Futurewater Digital help you ride the wave of digital
