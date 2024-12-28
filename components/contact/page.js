@@ -114,8 +114,8 @@ export default function Page() {
           </h1>
         </div>
       </section> */}
-      <div className="mx-auto grid w-11/12 py-24 lg:grid-cols-2">
-        <div>
+      <div className="mx-auto grid w-11/12 lg:grid-cols-2 lg:py-24">
+        <div className="order-2">
           <h2 className="text-2xl font-bold uppercase text-white">
             Why Choose Futurewater Digital?
           </h2>
@@ -271,12 +271,12 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="">
+        <div className="order-1">
           {" "}
           <LottieAnimation
             src="/lottie/contact_us.json"
-            height={700}
-            width={700}
+            height="100%"
+            width="100%"
             autoplay={true}
             loop={true}
           />

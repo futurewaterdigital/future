@@ -25,7 +25,10 @@ const LottieAnimation = ({
   }, []);
 
   return (
-    <div style={{ height: `${height}px`, width: `${width}px` }}>
+    <div
+      style={{ height: `${height}px`, width: `${width}px` }}
+      className="w-full"
+    >
       <Player
         src={src}
         autoplay={autoplay}

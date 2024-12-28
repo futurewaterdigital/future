@@ -5,9 +5,9 @@ import LottieAnimation from "@/utils/LottieAnimation";
 
 export default function page() {
   return (
-    <div className="  bg-[#020D17] pt-40">
+    <div className="bg-[#020D17] pt-10">
       <div className="grid w-full lg:grid-cols-2">
-        <div className="order-2 mx-auto flex w-8/12 flex-col justify-center lg:order-1">
+        <div className="order-2 mx-auto flex w-11/12 flex-col justify-center lg:order-1 lg:w-8/12">
           <h1 class="mb-4 text-3xl font-bold uppercase leading-none tracking-tight text-cyan md:text-3xl lg:text-5xl">
             Performance Marketing
           </h1>
@@ -17,19 +17,11 @@ export default function page() {
             bottom line. Our performance marketing services include:
           </p>
         </div>
-
-        <div className="flex justify-center md:order-1 md:items-center md:justify-center lg:order-2">
-          {/* <Image
-            src="/images/digital-marketing.png"
-            width={400}
-            height={400}
-            alt="Future Water Digital Marketing Agency"
-            className="w-[300px] lg:w-full"
-          /> */}
+        <div className="order-1">
           <LottieAnimation
             src="/lottie/performance_marketing.json"
-            height={700}
-            width={700}
+            height="100%"
+            width="100%"
             autoplay={true}
             loop={true}
           />
@@ -42,7 +34,7 @@ export default function page() {
             className="group min-h-[14em] w-full rounded-2xl bg-[#00FFF3] pr-2 pt-2"
             key={index}
           >
-            <div className="z-50 flex min-h-[14em] gap-4 rounded-2xl bg-white p-4 group-hover:scale-105 group-hover:bg-gray-800 group-hover:text-white">
+            <div className="z-50 flex min-h-[14em] flex-col gap-4 rounded-2xl bg-white p-4 group-hover:scale-105 group-hover:bg-gray-800 group-hover:text-white lg:flex-row">
               <div className="mt-2 ">
                 <span className="mt-8 rounded-full border-2 border-black px-4 py-2.5 group-hover:border-white">
                   {items.id}

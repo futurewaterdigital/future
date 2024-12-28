@@ -5,7 +5,7 @@ import LottieAnimation from "@/utils/LottieAnimation";
 
 export default function page() {
   return (
-    <div className="grid bg-[#020D17] py-12 pt-40 lg:grid-cols-2">
+    <div className="grid bg-[#020D17] py-8 pt-40 lg:grid-cols-2">
       <div className="order-2 mx-auto flex flex-col justify-center px-4 lg:order-1 lg:w-9/12">
         <h1 class="mb-4 text-3xl font-bold uppercase leading-none tracking-tight text-cyan md:text-3xl lg:text-5xl">
           Videography
@@ -33,7 +33,7 @@ export default function page() {
           ))}
         </div>
       </div>
-      <div className="flex justify-center md:order-1 md:items-center md:justify-center md:pt-10 lg:order-2">
+      <div className="order-1 flex justify-center">
         {/* <Image
           src="/images/videography.png"
           width={400}
@@ -43,8 +43,8 @@ export default function page() {
         /> */}
         <LottieAnimation
           src="/lottie/videography.json"
-          height={550}
-          width={550}
+          height="100%"
+          width="100%"
           autoplay={true}
           loop={true}
         />

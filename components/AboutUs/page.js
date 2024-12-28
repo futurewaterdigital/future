@@ -4,7 +4,7 @@ import LottieAnimation from "@/utils/LottieAnimation";
 
 export default function page() {
   return (
-    <div className="grid overflow-hidden bg-[#020D17] lg:grid-cols-2">
+    <div className="grid overflow-hidden bg-[#020D17] py-12 lg:grid-cols-2">
       <div className="order-2 mx-auto px-4 text-white md:order-2 lg:order-1 lg:pl-10 lg:pt-40">
         <h1 class="mb-4 text-3xl font-bold uppercase leading-none tracking-tight text-cyan md:text-3xl lg:text-5xl">
           About Us
@@ -42,7 +42,7 @@ export default function page() {
           backed by the essentials of expert strategy and innovative technology.
         </p>
       </div>
-      <div className="order-1 flex pt-60 md:order-1 md:items-center md:justify-center lg:order-2">
+      <div className="order-1 flex pt-20 md:order-1 md:items-center md:justify-center lg:order-2 lg:pt-60">
         {/* <Image
           src="/images/about-us.png"
           width={400}
@@ -52,10 +52,11 @@ export default function page() {
         /> */}
         <LottieAnimation
           src="/lottie/about_us.json"
-          height={550}
-          width={550}
+          height="100%"
+          width="100%"
           autoplay={true}
           loop={true}
+          className="w-full"
         />
       </div>
     </div>

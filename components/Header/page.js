@@ -30,7 +30,7 @@ export default function Page() {
 
   return (
     <div>
-      <nav className="absolute start-0 top-6 z-20 w-full border-b border-gray-200 bg-white dark:border-gray-600 dark:bg-gray-900 lg:py-4">
+      <nav className="absolute start-0 top-6 z-[999] w-full border-b border-gray-200 bg-white dark:border-gray-600 dark:bg-gray-900 lg:py-4">
         <div className="mx-auto flex max-w-screen-xl flex-row flex-wrap items-center justify-between p-2">
           <Link
             href="/"
@@ -44,7 +44,7 @@ export default function Page() {
               height={100}
             />
           </Link>
-          <div className="flex items-center gap-2 md:order-2 md:space-x-0 lg:gap-8 lg:space-x-3 rtl:space-x-reverse">
+          <div className="z-50 flex items-center gap-2 md:order-2 md:space-x-0 lg:gap-8 lg:space-x-3 rtl:space-x-reverse">
             <Link
               href="/contact-us"
               type="button"
