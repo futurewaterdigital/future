@@ -14,7 +14,7 @@ export default function Banner() {
         </div>
 
         {/* Text Content */}
-        <div className="relative top-48 z-50 mx-auto px-6 pb-28 pt-48 md:w-10/12 lg:w-10/12 lg:pr-48">
+        <div className="relative top-12 z-50 mx-auto px-6 pb-28 pt-40 md:w-10/12 lg:w-10/12 lg:pr-48">
           <p className="text-2xl text-white">Ready to make a splash in the</p>
           <h1 className="mb-4 text-4xl font-bold uppercase leading-none tracking-tight text-cyan sm:text-4xl md:text-5xl">
             Digital World?
