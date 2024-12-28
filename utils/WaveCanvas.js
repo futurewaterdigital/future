@@ -18,7 +18,9 @@ export default function WavesEffect() {
     const renderer = new THREE.WebGLRenderer({ alpha: true }); // Alpha enabled for transparency
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(window.devicePixelRatio);
-    canvasRef.current.appendChild(renderer.domElement);
+    if (canvasRef.current) {
+      canvasRef.current.appendChild(renderer.domElement);
+    }
 
     const gridSize = 400;
     const spacing = 0.5;
@@ -73,10 +75,15 @@ export default function WavesEffect() {
 
     return () => {
       window.removeEventListener("resize", handleResize);
+
+      // Cleanup WebGL resources and check if canvasRef.current exists
       renderer.dispose();
       geometry.dispose();
       material.dispose();
-      canvasRef.current.removeChild(renderer.domElement);
+
+      if (canvasRef.current) {
+        canvasRef.current.removeChild(renderer.domElement);
+      }
     };
   }, []);
 
@@ -85,6 +92,7 @@ export default function WavesEffect() {
       ref={canvasRef}
       style={{
         pointerEvents: "none", // Prevent interactions with the canvas
+        opacity: 0.4,
       }}
       className="absolute left-0 top-0 z-0 h-full w-full opacity-20"
     />
