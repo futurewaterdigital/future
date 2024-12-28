@@ -115,7 +115,7 @@ export default function Page() {
         </div>
       </section> */}
       <div className="mx-auto grid w-11/12 lg:grid-cols-2 lg:py-24">
-        <div className="order-2">
+        <div className="order-2 lg:order-1">
           <h2 className="text-2xl font-bold uppercase text-white">
             Why Choose Futurewater Digital?
           </h2>
