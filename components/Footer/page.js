@@ -138,7 +138,7 @@ export default function Page() {
           <FaLinkedin size={22} />
         </div>
       </div>
-      <CollectScript />
+      {/* <CollectScript /> */}
     </div>
   );
 }

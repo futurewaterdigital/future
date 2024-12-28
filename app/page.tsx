@@ -5,10 +5,10 @@ import OurServices from "@/components/HomePage/OurServices";
 
 export default function Home() {
   return (
-    <>
+    <div className="overflow-hidden">
       <HomeBanner />
       <OurApproach />
       <OurServices />
-    </>
+    </div>
   );
 }
