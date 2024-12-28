@@ -108,7 +108,7 @@ export const PerformanceMarketing = [
     id: 1,
     name: "Pay-Per-Click Advertising (PPC)",
     description:
-      "Managing paid advertising campaigns on platforms like Meta,Google and other social media networks to drive targeted traffic and maximise return on ad spend (RoAS)",
+      "Managing paid advertising campaigns on platforms like Meta, Google and other social media networks to drive targeted traffic and maximise return on Ad spend (RoAS)",
   },
   {
     id: 2,
