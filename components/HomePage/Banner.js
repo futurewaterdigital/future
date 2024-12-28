@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Banner() {
   return (
     <div className="overflow-hidden bg-[#020D17]">
-      <section className="relative z-10 h-full overflow-hidden bg-[url('/images/BG.jpg')] bg-cover bg-center bg-no-repeat lg:min-h-[80vh]">
+      <section className="z-10 h-full overflow-hidden bg-[url('/images/BG.jpg')] bg-cover bg-center bg-no-repeat lg:min-h-[80vh]">
         {/* Spinning Image */}
         <div className="absolute right-[-600px] z-0 w-[900px] overflow-hidden">
           <img

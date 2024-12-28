@@ -3,9 +3,9 @@ import { OurApproach } from "@/utils/data";
 
 export default function Approach() {
   return (
-    <div className="z-20 h-full overflow-hidden bg-[#020D17]">
-      <section class="flex h-full flex-col justify-center bg-[url('/images/BG.jpg')] bg-cover bg-center bg-no-repeat">
-        <div className="absolute left-[-90px] top-[830px] z-20 w-[600px] lg:left-[-650px] lg:w-[900px]">
+    <div className=" z-20 h-full overflow-hidden bg-[#020D17]">
+      <section class="flex h-full flex-col justify-center overflow-hidden bg-[url('/images/BG.jpg')] bg-cover bg-center bg-no-repeat">
+        <div className="absolute left-[-90px] top-[830px] z-20 w-[600px] overflow-hidden lg:left-[-650px] lg:top-[600px]  lg:w-[900px]">
           <img
             src="/images/circle.png"
             className="animate-spin-slow w-full opacity-50"
@@ -42,7 +42,7 @@ export default function Approach() {
                         <i class="fas fa-lightbulb text-2xl text-white"></i>
                       </div>
                     </div> */}
-                    <div class="ml-4 rounded-lg border-l-4 border-cyan bg-gray-400 p-4 shadow-lg">
+                    <div class="rounded-lg border-l-4 border-cyan bg-gray-400 p-4 shadow-lg">
                       <h2 class="text-lg font-bold text-cyan">{items.title}</h2>
                       <p class="text-white">{items.description}</p>
                     </div>
